@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="background"></div> -->
+    <div class="content">
+        <h1>Mio Mondo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#mod">Angebot des Tages</a></li>
+                <li><a href="#card">Speisekarte</a></li>
+                <li><a href="#reservation">Reservierung</a></li>
+                <li><a href="#aboutus">Über Uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="slider-wrapper">
+            <div class="slider-items">
+                <div class="slider-item slider-1">
+                    <div class="slider-item-info-box">
+                        Synergistic intangible toolset
+                    </div>
+                </div>
+                <div class="slider-item slider-2">
+                    <div class="slider-item-info-box">
+                        Fully-configurable coherent superstructure
+                    </div>
+                </div>
+                <div class="slider-item slider-3">
+                    <div class="slider-item-info-box">
+                        Mandatory even-keeled matrices
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="mod">Angebote des Tages</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Salami</h3>
+                <img src="images/pizza_PNG43991.png" style="height: 50%; width: auto;">
+                <div class="incredient-list">
+                    <span>Tomatensauce</span>
+                    <span>Käse</span>
+                    <span>Salami</span>
+                    <span>Oregano</span>
+                </div>
+                <p>Et labore libero accusamus ut et assumenda eius nulla nulla. Autem tempora mollitia ullam dicta
+                    distinctio sed ipsam. Maiores quia voluptas corporis non consequatur doloremque porro incidunt
+                    soluta. Tempore corporis odio sint optio nam non et aperiam dignissimos. Explicabo qui odio iure
+                    fugit. Ea accusamus magni sequi quia eos.</p>
+            </div>
+            <div class="card">
+                <h3>Salami</h3>
+                <img src="images/pizza_PNG43991.png" style="height: 50%; width: auto;">
+                <div class="incredient-list">
+                    <span>Tomatensauce</span>
+                    <span>Käse</span>
+                    <span>Salami</span>
+                    <span>Oregano</span>
+                    <span>Salami</span>
+                    <span>Oregano</span>
+                </div>
+                <p>Non minus nobis quia. Saepe pariatur et eos. Sequi et deleniti sunt et et odio iste rerum ea. Rerum
+                    quae et. Itaque et eum.</p>
+            </div>
+            <div class="card">
+                <h3>Salami</h3>
+                <img src="images/pizza_PNG43991.png" style="height: 50%; width: auto;">
+                <div class="incredient-list">
+                    <span>Tomatensauce</span>
+                    <span>Käse</span>
+                </div>
+                <p>Hic molestiae porro harum iste eos. Atque at temporibus laboriosam quas harum sed quia rem. Sed aut
+                    animi aperiam quod voluptatum aut.</p>
+            </div>
+        </div>
+        <h2 id="card">Speisekarte</h2>
+        <div class="mealcard">
+            <p>Ipsam eius voluptates vel. Modi rerum sunt non. Nesciunt asperiores iusto. Fuga facilis dolorem
+                voluptatem possimus autem repellendus non est. Nam magnam dolor eaque molestias maxime quos corporis
+                laborum omnis. Ab qui quas quisquam.</p>
+            <p>Beatae quibusdam omnis tempora dolor aliquam veritatis nobis et est. Amet quia et dolores possimus
+                quisquam distinctio consequuntur ducimus sequi. Quas nihil velit similique eius voluptatem et magnam.
+            </p>
+
+            <p>Neque repellat cum tenetur quam nostrum mollitia soluta sapiente molestias. Ut tempora et fugiat
+                repellendus aspernatur veritatis id est. Voluptatum tempora sunt.</p>
+        </div>
+        <h2 id="reservation">Reservierung</h2>
+        <div class="reservation">
+            <div>
+                <label for="reserve-name">reserve-name</label>
+                <input type="text" name="reserve-name" id="reserve-name">
+            </div>
+            <div>
+                <label for="reserve-date">reserve-date</label>
+                <input type="date" name="reserve-date" id="reserve-date">
+            </div>
+            <div>
+                
+                <label for="reserve-time">reserve-date</label>
+                <input type="time" name="reserve-time" id="reserve-time">
+            </div>
+            <div>
+                
+                <label for="reserve-count">reserve-count</label>
+                <input type="number" name="reserve-count" id="reserve-count">
+            </div>
+            <div>
+                <label for="reserve-email">reserve-email</label>
+                <input type="email" name="reserve-email" id="reserve-email">
+            </div>
+            <div>
+                <label for="">&nbsp;</label>
+                <input type="button" value="Reservieren">
+            </div>
+        </div>
+        <h2 id="aboutus">Über Uns</h2>
+        <div class="about">
+            <p>Focused web-enabled artificial intelligence</p>
+            <div class="instagram"></div>
+        </div>
+        <h2 id="contact">Kontakt</h2>
+        <div class="contactform">
+            
+        </div>
+    </div>
+    <footer>Copyright | Kontakt | Impressum | Datenschutz</footer>
+    <script>
+        const cards = document.querySelector(".slider-items");
+        let translateX = 0;
+
+        setInterval(function () {
+            if (translateX - 1300 <= cards.childElementCount * -1300) {
+                translateX = 0;
+            } else {
+                translateX = translateX - 1300;
+            }
+            cards.style.transform = `translateX(${translateX}px)`;
+        }, 7000)
+    </script>
+</body>
+
+</html>
