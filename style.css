@@ -34,6 +34,8 @@ html, body {
     justify-content: center;
     font-size: 16px;
     flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
 nav {
@@ -51,6 +53,7 @@ nav ul {
 nav ul a {
     color: #cccccc;
     text-decoration: none;
+    font-weight: 400;
 }
 
 nav ul a:hover {
@@ -153,6 +156,7 @@ nav ul a:hover {
 .card > .incredient-list {
     margin-bottom: 4em;
     text-align: center;
+    font-weight: 200;
 }
 .card > .incredient-list span:first-child::before,
 .card > .incredient-list span::after {
@@ -175,4 +179,55 @@ h2 {
     margin-top: 2em;
     margin-bottom: 0.5em;
     color: var(--green4);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="email"],
+input[type="button"],
+textarea
+ {
+    background-color: #475545;
+    border: none;
+    padding: 0.5em;
+    color: #fafafa;
+}
+.contactform > div {
+    margin: 1em 0;
+}
+
+.contactform label {
+    display: block;
+}
+
+.mealcard > p,
+.about > p {
+    margin: 0.5em 0;
+}
+
+.mealcard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mealcard .category {
+    margin: 1em 1em;
+    max-width: 29%;
+}
+
+.highlight {
+    color: var(--red1);
+    font-weight: 400;
+}
+
+.hightlight.green {
+    color: var(--red1);
+}
+
+a {
+    color: var(--red1);
+    font-weight: 600;
 }
