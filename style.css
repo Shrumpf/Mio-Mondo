@@ -36,6 +36,8 @@ html, body {
     flex-direction: column;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+    background-image: url("./images/dust.webp");
+    background-blend-mode: darken;
 }
 
 nav {
@@ -58,16 +60,6 @@ nav ul a {
 
 nav ul a:hover {
     color: var(--green5)
-}
-
-.background {
-    content: '';
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-    background-image: url("./images/wood.jpg");
 }
 
 .content {
@@ -142,6 +134,7 @@ nav ul a:hover {
     align-items: center;
     padding: 0.5em;
     border-radius: 5px;
+    background-color:#212121aa;
     /* box-shadow: 0.5em 0.5em 0.5em 0 rgba(255, 255, 255, 0.1); */
 }
 
@@ -167,12 +160,18 @@ nav ul a:hover {
 
 .reservation {
     display: flex;
+    background-color: #212121aa;
+    padding: 1em;
 }
 
 .reservation > div {
     display: flex;
     flex-direction: column;
     margin-right: 1em;
+}
+
+.reserve-info {
+    justify-content: center;
 }
 
 h2 {
@@ -188,19 +187,33 @@ input[type="time"],
 input[type="number"],
 input[type="email"],
 input[type="button"],
+input[type="submit"],
 textarea
  {
     background-color: #475545;
     border: none;
-    padding: 0.5em;
+    padding: 1em;
     color: #fafafa;
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
+.contactform {
+    background-color: #212121aa;
+    padding: 1em;
+}
+
 .contactform > div {
     margin: 1em 0;
 }
 
 .contactform label {
     display: block;
+}
+
+.about {
+    background-color: #212121aa;
+    padding: 1em;
 }
 
 .mealcard > p,
@@ -211,20 +224,76 @@ textarea
 .mealcard {
     display: flex;
     flex-wrap: wrap;
+    background-color:#212121aa;
+    padding: 1em;
 }
 
 .mealcard .category {
     margin: 1em 1em;
-    max-width: 29%;
 }
 
-.highlight {
+.mealcard .category li {
+    color: var(--red3);
+    font-weight: 400;
+}
+
+.mealcard .category li::marker {
+    color: var(--green4);
+    font-weight: 300;
+}
+
+.mealcard .category h4 {
+    margin-bottom: 1em;
+}
+
+.highlight.red {
     color: var(--red1);
     font-weight: 400;
 }
 
-.hightlight.green {
-    color: var(--red1);
+.highlight.green {
+    color: var(--green4);
+    font-weight: 400;
+}
+
+.highlight.white {
+    color: #fafafa;
+    font-weight: 300;
+}
+
+.instagram {
+    background-color: #fafafa;
+    width: 50%;
+    color: #141414;
+    font-weight: 400;
+    display: flex;
+    padding: 1em;
+}
+
+.instagram .images {    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+}
+
+.instagram .images img:hover {
+    transform: scale(1.2, 1.2);
+    transition: all ease-in-out 0.25s;
+}
+
+.instagram-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram-infos button {
+    color: #fff;
+    background-color: #3694EC;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
